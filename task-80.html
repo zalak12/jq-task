@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Inserting HTML Contents At the End of the Elements in jQuery</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(){
+    // Append all paragraphs on document ready
+    $("p").append(' <a href="#">read more...</a>');
+    
+    // Append a div container on button click
+    $("button").click(function(){
+       $("#container").append("This is demo text.");
+    });
+});
+</script>
+</head>
+<body>
+    <button type="button">Insert Text</button>
+    <div id="container">
+        <p>jQuery is a fast, small, cross-platform and feature-rich JavaScript library. It is designed to simplify the client-side scripting of HTML.</p>
+        <p>It makes things like HTML document traversal and manipulation, animation, event handling, and AJAX very simple with an easy-to-use API that works on a lot of different type of browsers.</p>
+    </div>
+</body>
+</html>

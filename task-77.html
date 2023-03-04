@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery Set Multiple Attribute for the Elements</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("img").attr({
+            "class" : "frame",
+            "title" : "Hot Air Balloons"
+        });
+    });
+});
+</script>
+<style>
+    .frame{
+        border: 6px solid #000;
+    }
+</style>
+</head>
+<body>
+    <button type="button">Set Attributes for Image</button>
+    <p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8-TnlG0v8efjT91-cVmjcaJLVVz-PWfWlJxiEjnLYsQ&usqp=CAU&ec=48600112" alt="nature">
+    </p>
+</body>
+</html>

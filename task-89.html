@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Removing an Attribute from the Elements in jQuery</title>
+<style>
+	a{
+        font-size: 18px;
+		margin-right: 20px;
+	}
+</style>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(){
+    // Removes the hyperlink's href attribute on button click
+    $("button").click(function(){
+        $("a").removeAttr("href");
+    });
+});
+</script>
+</head>
+<body>
+    <div class="container">
+        <p>
+			<a href="https://jquery.com/">Home</a>
+			<a href="https://en.wikipedia.org/wiki/JQuery">About</a>
+			<a href="https://www.jqueryscript.net/tags.php?/Contact%20Form/">Contact</a>
+		</p>
+        <button type="button">Remove Attribute</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery Get an Element's Attribute Value</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".btn-one").click(function(){
+        var str = $("a").attr("href");
+        alert(str);
+    });
+    $(".btn-two").click(function(){
+        var str = $("img#sky").attr("alt");
+        alert(str);
+    });
+});
+</script>
+</head>
+<body>
+    <button type="button" class="btn-one">Get Link's HREF Attribute</button>
+    <button type="button" class="btn-two">Get Image ALT Attribute</button>
+    <p><a href="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/Zugpsitze_mountain.jpg?crop=0%2C176%2C3008%2C1654&wid=4000&hei=2200&scl=0.752" width="90" height="90">Tutorial Republic</a></p>
+    <img id="sky" src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/Zugpsitze_mountain.jpg?crop=0%2C176%2C3008%2C1654&wid=4000&hei=2200&scl=0.752" alt="Cloudy Sky">
+</body>
+</html>

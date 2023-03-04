@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of jQuery Animated Show Hide Effects</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+    p{
+        padding: 15px;
+        background:palevioletred;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    // Hide displayed paragraphs with different speeds
+    $(".hide-btn").click(function(){
+        $("p.normal").hide();
+        $("p.fast").hide("fast");
+        $("p.slow").hide("slow");
+        $("p.very-fast").hide(50);
+        $("p.very-slow").hide(2000);
+    });
+    
+    // Show hidden paragraphs with different speeds
+    $(".show-btn").click(function(){
+        $("p.normal").show();
+        $("p.fast").show("fast");
+        $("p.slow").show("slow");
+        $("p.very-fast").show(50);
+        $("p.very-slow").show(2000);
+    });
+});
+</script>
+</head>
+<body>
+    <button type="button" class="hide-btn">Hide Paragraphs</button> 
+    <button type="button" class="show-btn">Show Paragraphs</button>
+    <p class="very-fast">jQuery is a fast, small, cross-platform and feature-rich JavaScript library. It is designed to simplify the client-side scripting of HTML.</p>
+    <p class="normal">It makes things like HTML document traversal and manipulation, animation, event handling, and AJAX very simple with an easy-to-use API that works on a lot of different type of browsers.</p>
+    <p class="fast">The main purpose of jQuery is to provide an easy way to use JavaScript on your website to make it more interactive and attractive. It is also used to add animation.</p>
+    <p class="slow">jQuery is a small, light-weight and fast JavaScript library. It is cross-platform and supports different types of browsers.</p>
+    <p class="very-slow">It is also referred as ?write less do more? because it takes a lot of common tasks that requires many lines of JavaScript code to accomplish, and binds them into methods that can be called with a single line of code whenever needed. It is also very useful to simplify a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation.</p>
+</body>
+</html>

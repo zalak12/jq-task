@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of jQuery Toggle Effect</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+    p{
+        padding: 15px;
+        background:plum;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    // Toggles paragraphs display
+    $(".toggle-btn").click(function(){
+        $("p").toggle();
+    });
+});
+</script>
+</head>
+<body>
+    <button type="button" class="toggle-btn">Toggle Paragraphs</button> 
+    <p>hello</p>
+    <p>Good Morning</p>
+</body>
+</html>                                		
